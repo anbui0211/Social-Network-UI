@@ -1,0 +1,938 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SOCICAL-PROJECT</title>
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+      />
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="header flex items-center px-3 w-auto py-2">
+      <div class="img-logo">
+        <img class="h-14 ml-4" src="./image/logo.png" alt="" >
+      </div>
+      <div class="search relative ml-28">
+        <input type="text" class="search__input w-80 text-xs bg-gray-100 rounded-3xl outline-none py-3 pl-10" placeholder="search.." />
+        <i class="fas fa-search absolute text-gray-300"></i>
+      </div>
+      <div class="menu-icon--center flex ml-8 hidden lg:block">
+        <a href="#" class="text-center bg-gray-100 rounded-full leading-10 w-10 h-10 mr-4 focus:text-blue-500 focus:bg-blue-100 inline-block  ">
+          <i class="fas fa-home text-xl text-gray-400"></i>
+        </a>
+        <a href="#" class="text-center bg-gray-100 rounded-full leading-10 w-10 h-10 mr-4 focus:text-blue-500 focus:bg-blue-100 inline-block  ">
+          <i class="fas fa-bolt text-base text-gray-400"></i>
+        </a>
+        <a href="#" class="text-center bg-gray-100 rounded-full leading-10 w-10 h-10 mr-4 focus:text-blue-500 focus:bg-blue-100 inline-block  ">
+          <i class="fas fa-video text-base text-gray-400"></i>
+        </a>
+        <a href="#" class="text-center bg-gray-100 rounded-full leading-10 w-10 h-10 mr-4 focus:text-blue-500 focus:bg-blue-100 inline-block  ">
+          <i class="fas fa-user text-base text-gray-400"></i>
+        </a>
+        <a href="#" class="text-center bg-gray-100 rounded-full leading-10 w-10 h-10 mr-4 focus:text-blue-500 focus:bg-blue-100 inline-block  ">
+          <i class="fas fa-book-open text-base text-gray-400"></i>
+        </a>
+      </div>
+      <div class="menu-icon-right ml-auto">
+        <div class="menu-icon__item">
+          <a href="#" class="pr-4">
+            <i class="far fa-bell text-blue-600 text-xl"></i>
+          </a>
+          <a href="#" class="pr-4">
+            <i class="far fa-comment-alt text-blue-600 text-xl"></i>
+          </a>
+          <a href="#" class="pr-4">
+            <i class="far fa-moon text-blue-600 text-xl"></i>
+          </a>
+          <a href="#" class="pr-4">
+            <i class="fas fa-user-shield text-blue-600 text-xl"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer flex p-3 bg-gray-100 ">
+      <div class="navigation  lg:w-1/5 w-1/4  " style="min-width: 14rem;">
+        <div class=" flex-col lg:w-4/5" style="max-width: 14.5rem">
+          <div class="nav-content bg-white rounded-xl p-5 mb-3 ">
+            <div class="mb-1">
+              <p class="text-xs text-gray-300 font-bold pl-1">New Feeds</p>
+            </div>
+            <ul>
+              <li class="py-1 text-gray-500 hover:text-blue-500">
+                <a href="#"><i
+                    class="
+                    far fa-newspaper
+                    text-white
+                    text-xs
+                    w-10
+                    h-10
+                    rounded-full
+                    text-center
+                    leading-10
+                    mr-2
+                    bg-gradient-to-r
+                    from-yellow-400
+                    to-pink-500"></i><span class="text-sm
+                    font-semibold">New  Feeds</span></a>
+              </li>
+              <li class="py-1 text-gray-500 hover:text-blue-500">
+                <a href="#"><i
+                    class="
+                    far fa-bookmark
+                    text-white
+                    text-md
+                    w-10
+                    h-10
+                    rounded-full
+                    text-center
+                    leading-10
+                    mr-2
+                    bg-gradient-to-r
+                    from-blue-400
+                    to-pink-500"></i><span class="text-sm
+                    font-semibold">Badges</span></a>
+              </li>
+              <li class="py-1 text-gray-500 hover:text-blue-500">
+                <a href="#"><i
+                    class="
+                    fas fa-globe
+                    text-white
+                    text-md
+                    w-10
+                    h-10
+                    rounded-full
+                    text-center
+                    leading-10
+                    mr-2
+                    bg-gradient-to-r
+                    from-green-400
+                    to-pink-500"></i><span class="text-sm
+                    font-semibold">Explore Stories</span></a>
+              </li>
+              <li class="py-1 text-gray-500 hover:text-blue-500">
+                <a href="#"><i
+                    class="
+                    fas fa-bolt
+                    text-white
+                    text-md
+                    w-10
+                    h-10
+                    rounded-full
+                    text-center
+                    leading-10
+                    mr-2
+                    bg-gradient-to-r
+                    from-purple-500
+                    to-pink-500"></i><span class="text-sm
+                    font-semibold">Popular Groups</span></a>
+              </li>
+              <li class="py-1 text-gray-500 hover:text-blue-500">
+                <a href="#"><i
+                    class="far
+                    fa-user
+                    text-white
+                    text-md
+                    w-10
+                    h-10
+                    rounded-full
+                    text-center
+                    leading-10
+                    mr-2
+                    bg-gradient-to-r
+                    from-indigo-500
+                    to-pink-500"></i><span class="text-sm
+                    font-semibold">Author profile</span></a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="nav-content bg-white rounded-xl p-5 mb-3">
+            <div class="mb-1">
+              <p class="text-xs text-gray-300 font-bold pl-1">More Pages</p>
+            </div>
+            <ul>
+              <li class="py-1 text-gray-400 hover:text-blue-500">
+                <a href="#" class="flex items-center"><i
+                    class="
+                    fas fa-inbox
+                    text-blue-500
+                    w-9
+                    h-9
+                    text-center
+                    leading-9
+                    mr-1
+                    text-xl"></i><span class="text-sm
+                    font-semibold">Email Box</span></a>
+              </li>
+              <li class="py-1 text-gray-400 hover:text-blue-500">
+                <a href="#" class="flex items-center"><i
+                    class="
+                    fas fa-hotel
+                    text-blue-500
+                    w-9
+                    h-9
+                    text-center
+                    leading-9
+                    mr-1
+                    text-xl"></i><span class="text-sm
+                    font-semibold">Near Hotel</span></a>
+              </li>
+              <li class="py-1 text-gray-400 hover:text-blue-500">
+                <a href="#" class="flex items-center"><i
+                    class="
+                    fas fa-map-marker-alt
+                    text-blue-500
+                    w-9
+                    h-9
+                    text-center
+                    leading-9
+                    mr-1
+                    text-xl"></i><span class="text-sm
+                    font-semibold">last Event</span></a>
+              </li>
+              <li class="py-1 text-gray-400 hover:text-blue-500">
+                <a href="#" class="flex items-center"><i
+                    class="
+                    fab fa-youtube
+                    text-blue-500
+                    w-9
+                    h-9
+                    text-center
+                    leading-9
+                    mr-1
+                    text-xl"></i><span class="text-sm
+                    font-semibold">Live Stream</span></a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="nav-content bg-white rounded-xl p-5 mb-3">
+            <div class="mb-1">
+              <p class="text-xs text-gray-300 font-bold pl-1">Account</p>
+            </div>
+            <ul>
+              <li class="py-1 text-gray-400 hover:text-blue-500">
+                <a href="#" class="flex items-center"><i
+                    class="
+                    fas fa-cog
+                    text-gray-400
+                    text-center
+                    mr-2
+                    text-md
+                    w-9
+                    h-9
+                    leading-9"></i><span class="text-sm
+                    font-semibold">Setting</span></a>
+              </li>
+              <li class="py-1 text-gray-400 hover:text-blue-500">
+                <a href="#" class="flex items-center"><i
+                    class="
+                    fas fa-chart-pie
+                    text-gray-400
+                    text-center
+                    mr-2
+                    text-md
+                    w-9
+                    h-9
+                    leading-9"></i><span class="text-sm
+                    font-semibold">Analytics</span></a>
+              </li>
+              <li class="py-1 text-gray-400 hover:text-blue-500">
+                <a href="#" class="flex items-center"><i
+                    class="
+                    far fa-comment-alt
+                    text-gray-400
+                    text-center
+                    mr-2
+                    text-md
+                    w-9
+                    h-9
+                    leading-9"></i><span class="text-sm
+                    font-semibold">Chat</span></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="main-content w-3/4 pr-2 lg:w-3/5 lg:pr-0" >
+        <div class="flex">
+          <div class="w-4/6 pr-3.5">
+            <div class="story flex overflow-auto">
+              <div class="story__item pr-3.5 pb-3.5">
+                <div class="story__item__image w-32 h-48 relative">
+                  <div class="absolute text-center">
+                    <img src="./image/a.jpg" alt="" class="w-12 h-12 rounded-3xl
+                      inline-block border border-white">
+                    <h4 class="text-white text-xs font-semibold">Phú Ân</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="story__item pr-3.5 pb-3.5">
+                <div class="story__item__image w-32 h-48 relative">
+                  <div class="absolute text-center">
+                    <img src="./image/avartar_1.jpg" alt="" class="w-12 h-12 rounded-3xl
+                      inline-block border border-white">
+                    <h4 class="text-white text-xs font-semibold">Đăng Đinh</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="story__item pr-3.5 pb-3.5">
+                <div class="story__item__image w-32 h-48 relative">
+                  <div class="absolute text-center">
+                    <img src="./image/avartar_2.jpg" alt="" class="w-12 h-12 rounded-3xl
+                      inline-block border border-white">
+                    <h4 class="text-white text-xs font-semibold">Thanh Tuấn</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="story__item pr-3.5 pb-3.5">
+                <div class="story__item__image w-32 h-48 relative">
+                  <div class="absolute text-center">
+                    <img src="./image/avartar_3.jfif" alt="" class="w-12 h-12 rounded-3xl
+                      inline-block border border-white">
+                    <h4 class="text-white text-xs font-semibold">Ngọc Huy</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="create-post bg-white rounded-2xl p-5">
+              <div class="pb-3">
+                <a href="" class="">
+                  <i class="far fa-edit text-blue-500 p-2 bg-gray-100
+                    rounded-3xl"></i>
+                  <span class="font-bold text-xs text-gray-400">Create Post</span>
+                </a>
+              </div>
+              <div class="relative">
+                <img src="./image/a.jpg" alt="avatar" class="absolute w-7 h-7
+                  rounded-3xl inline-block"/>
+                <textarea  value="" placeholder="What's on your mind?"
+                  class="border rounded-2xl w-full h-24 py-3 pl-11
+                  outline-none">
+                </textarea>
+              </div>
+              <div class="flex items-center">
+                <a href="#" class="w-1/4">
+                  <i class="fas fa-video text-lg"></i>
+                  <span class="text-sm text-gray-500 leading-8 pl-1">Live Video</span>
+                </a>
+                <a href="#" class="w-1/4">
+                  <i class="far fa-image text-lg"></i>
+                  <span class="text-sm text-gray-500 leading-8 pl-1">Photo/Video</span>
+                </a>
+                <a href="#" class="w-1/4">
+                  <i class="fas fa-camera text-lg"></i>
+                  <span class="text-sm text-gray-500 leading-8 pl-1">Feeling/Activity</span>
+                </a>
+                <div class="w-1/4 inline">
+                  <a href="" class="float-right"><i class="fas fa-ellipsis-h p-3
+                      bg-gray-100 rounded-3xl"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="new-post mt-3 mb-3">
+              <div class="new-post__item bg-white p-5 rounded-2xl mb-3">
+                <div class="new-post__item__name flex">
+                  <img src="./image/avartar_1.jpg" alt="avatar" class="w-9 h-9
+                    rounded-3xl inline-block" />
+                  <h4 class="ml-2 flex flex-col w-32 text-sm font-medium">
+                    Tấn Hiệu
+                    <span class="text-gray-400 text-xs font-semibold">22 min ago</span>
+                  </h4>
+                  <div class="w-1/4 inline w-full">
+                    <a href="" class="float-right"><i class="fas fa-ellipsis-h
+                        p-3 bg-gray-100 rounded-3xl"></i></a>
+                  </div>
+                </div>
+                <div class="new-post__item__desc w-5/6 my-3">
+                  <p class="text-gray-400 text-xs font-medium">Lorem ipsum dolor
+                    sit amet, consectetur adipiscing elit. Morbi nulla dolor,
+                    ornare at commodo non, feugiat non nisi. Phasellus faucibus
+                    mollis pharetra. Proin blandit ac massa sed rhoncus. <a href="#" class="text-blue-600">See more</a></p>
+                </div>
+                <div class="new-post__item__img mb-3">
+                  <iframe style="border-radius:8px"
+                    width="100%" height="320px"
+                    src="https://www.youtube.com/embed/O4XDCV08Rng"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write;
+                    encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                </div>
+                <div class="new-post__item__interact flex items-center">
+                  <a href="" class="mr-4">
+                    <i class="far fa-thumbs-up bg-blue-500 text-white w-6 h-6
+                      rounded-3xl text-center leading-6 text-xs"></i>
+                    <i class="far fa-heart bg-red-500 text-white w-6 h-6
+                      rounded-3xl text-center leading-6 text-xs"></i>
+                    <span class="text-gray-400 text-xs font-semibold">2,8 Like</span>
+                  </a>
+                  <a href="" class="mr-4">
+                    <i class="far fa-comment"></i>
+                    <span class="text-gray-400 text-xs font-semibold">22 Comment</span>
+                  </a>
+                  <a href="" class="ml-auto">
+                    <i class="fas fa-share-alt"></i>
+                    <span class="text-gray-400 text-xs font-semibold">Share</span>
+                  </a>
+                </div>
+              </div>
+
+              <div class="new-post__item bg-white p-5 rounded-2xl mb-3">
+                <div class="new-post__item__name flex">
+                  <img src="./image/avartar_2.jpg" alt="avatar" class="w-9 h-9
+                    rounded-3xl inline-block" />
+                  <h4 class="ml-2 flex flex-col w-32 text-sm font-medium">
+                    Thanh Tuấn
+                    <span class="text-gray-400 text-xs font-semibold">22 min ago</span>
+                  </h4>
+                  <div class="w-1/4 inline w-full">
+                    <a href="" class="float-right"><i class="fas fa-ellipsis-h
+                        p-3 bg-gray-100 rounded-3xl"></i></a>
+                  </div>
+                </div>
+                <div class="new-post__item__desc w-5/6 my-3">
+                  <p class="text-gray-400 text-xs font-medium">Lorem ipsum dolor
+                    sit amet, consectetur adipiscing elit. Morbi nulla dolor,
+                    ornare at commodo non, feugiat non nisi. Phasellus faucibus
+                    mollis pharetra. Proin blandit ac massa sed rhoncus. <a href="#" class="text-blue-600">See more</a></p>
+                </div>
+                <div class="new-post__item__img mb-3">
+                  <img src="./image/post_an.jpg" alt="" class="w-full h-80 rounded-md">
+                </div>
+                <div class="new-post__item__interact flex items-center">
+                  <a href="" class="mr-4">
+                    <i class="far fa-thumbs-up bg-blue-500 text-white w-6 h-6
+                      rounded-3xl text-center leading-6 text-xs"></i>
+                    <i class="far fa-heart bg-red-500 text-white w-6 h-6
+                      rounded-3xl text-center leading-6 text-xs"></i>
+                    <span class="text-gray-400 text-xs font-semibold">2,8 Like</span>
+                  </a>
+                  <a href="" class="mr-4">
+                    <i class="far fa-comment"></i>
+                    <span class="text-gray-400 text-xs font-semibold">22 Comment</span>
+                  </a>
+                  <a href="" class="ml-auto">
+                    <i class="fas fa-share-alt"></i>
+                    <span class="text-gray-400 text-xs font-semibold">Share</span>
+                  </a>
+                </div>
+              </div>  
+
+              <div class="new-post__item bg-white p-5 rounded-2xl mb-3">
+                <div class="new-post__item__name flex">
+                  <img src="./image/avartar_3.jfif" alt="avatar" class="w-9 h-9
+                    rounded-3xl inline-block" />
+                  <h4 class="ml-2 flex flex-col w-32 text-sm font-medium">
+                    Đăng Định
+                    <span class="text-gray-400 text-xs font-semibold">22 min ago</span>
+                  </h4>
+                  <div class="w-1/4 inline w-full">
+                    <a href="" class="float-right"><i class="fas fa-ellipsis-h
+                        p-3 bg-gray-100 rounded-3xl"></i></a>
+                  </div>
+                </div>
+                <div class="new-post__item__desc w-5/6 my-3">
+                  <p class="text-gray-400 text-xs font-medium">Lorem ipsum dolor
+                    sit amet, consectetur adipiscing elit. Morbi nulla dolor,
+                    ornare at commodo non, feugiat non nisi. Phasellus faucibus
+                    mollis pharetra. Proin blandit ac massa sed rhoncus. <a href="#" class="text-blue-600">See more</a></p>
+                </div>
+                <div class="new-post__item__img mb-3">
+                  <img src="./image/post-dinh.jpg" alt="" class="object-cover
+                    w-full h-80 rounded-md">
+                </div>
+                <div class="new-post__item__interact flex items-center">
+                  <a href="" class="mr-4">
+                    <i class="far fa-thumbs-up bg-blue-500 text-white w-6 h-6
+                      rounded-3xl text-center leading-6 text-xs"></i>
+                    <i class="far fa-heart bg-red-500 text-white w-6 h-6
+                      rounded-3xl text-center leading-6 text-xs"></i>
+                    <span class="text-gray-400 text-xs font-semibold">2,8 Like</span>
+                  </a>
+                  <a href="" class="mr-4">
+                    <i class="far fa-comment"></i>
+                    <span class="text-gray-400 text-xs font-semibold">22 Comment</span>
+                  </a>
+                  <a href="" class="ml-auto">
+                    <i class="fas fa-share-alt"></i>
+                    <span class="text-gray-400 text-xs font-semibold">Share</span>
+                  </a>
+                </div>
+              </div>
+
+            </div>
+            <div class="new-follow flex">
+              <div class="bg-white mr-4 rounded-xl w-32 text-center py-4">
+                <img src="./image/avartar_3.jfif" alt="" class="w-14 h-14 rounded-full
+                  m-auto mb-2">
+                <h4 class="text-black text-sm font-semibold">Mỹ Lệ</h4>
+                <p class="text-xs text-gray-400 mb-3">@html</p>
+                <button class="bg-green-500 text-white py-1 px-4 rounded-3xl">Follow</button>
+              </div>
+
+              <div class="bg-white mr-4 rounded-xl w-32 text-center py-4">
+                <img src="./image/avartar_2.jpg" alt="" class="w-14 h-14 rounded-full
+                  m-auto mb-2">
+                <h4 class="text-black text-sm font-semibold">Quang Lê</h4>
+                <p class="text-xs text-gray-400 mb-3">@quanglee</p>
+                <button class="bg-green-500 text-white py-1 px-4 rounded-3xl">Follow</button>
+              </div>
+              <div class="bg-white mr-4 rounded-xl w-32 text-center py-4">
+                <img src="./image/avartar_5.jfif" alt="" class="w-14 h-14 rounded-full
+                  m-auto mb-2">
+                <h4 class="text-black text-sm font-semibold">Thầy Huy</h4>
+                <p class="text-xs text-gray-400 mb-3">@huylee</p>
+                <button class="bg-green-500 text-white py-1 px-4 rounded-3xl">Follow</button>
+              </div>
+              <div class="bg-white mr-4 rounded-xl w-32 text-center py-4">
+                <img src="./image/avartar_6.jfif" alt="" class="w-14 h-14 rounded-full
+                  m-auto mb-2">
+                <h4 class="text-black text-sm font-semibold">Bích Tra</h4>
+                <p class="text-xs text-gray-400 mb-3">@bichtra</p>
+                <button class="bg-green-500 text-white py-1 px-4 rounded-3xl">Follow</button>
+              </div>
+
+            </div>
+          </div>
+          <div class="w-2/6 ">
+            <div class="friend-request bg-white rounded-2xl mb-3">
+              <div class="p-5">
+                <div class="mb-4">
+                  <h4 class="inline-block text-xs font-bold">Friend Request</h4>
+                  <a href="#" class="float-right text-xs text-blue-500 font-bold">See all</a>
+                </div>
+                <div class="mb-4">
+                    <div class="flex mb-3">
+                      <img src="./image/a.jpg" alt="avatar" class="w-9 h-9
+                        rounded-3xl inline-block" />
+                      <h4 class="ml-2 flex flex-col w-32 text-sm font-medium">
+                        Tấn Hiệu
+                        <span class="text-gray-400 text-xs font-semibold">22 min ago</span>
+                      </h4>
+                    </div>
+                    <div class="flex">
+                        <button class="w-24 bg-blue-500 text-white py-1 px-3 rounded-3xl mr-3">Confirm</button>
+                        <button class="w-24 bg-gray-200 text-black py-1 px-3 rounded-3xl">Delete</button>
+                    </div>
+                </div>
+                <div class="mb-4">
+                    <div class="flex mb-3">
+                      <img src="./image/a.jpg" alt="avatar" class="w-9 h-9
+                        rounded-3xl inline-block" />
+                      <h4 class="ml-2 flex flex-col w-32 text-sm font-medium">
+                        Minh Phương
+                        <span class="text-gray-400 text-xs font-semibold">22 min ago</span>
+                      </h4>
+                    </div>
+                    <div class="flex">
+                        <button class="w-24 bg-blue-500 text-white py-1 px-3 rounded-3xl mr-3">Confirm</button>
+                        <button class="w-24 bg-gray-200 text-black py-1 px-3 rounded-3xl">Delete</button>
+                    </div>
+                </div>
+                <div class="">
+                    <div class="flex mb-3">
+                      <img src="./image/a.jpg" alt="avatar" class="w-9 h-9
+                        rounded-3xl inline-block" />
+                      <h4 class="ml-2 flex flex-col w-32 text-sm font-medium">
+                        Phú Quốc
+                        <span class="text-gray-400 text-xs font-semibold">22 min ago</span>
+                      </h4>
+                    </div>
+                    <div class="flex">
+                        <button class="w-24 bg-blue-500 text-white py-1 px-3 rounded-3xl mr-3">Confirm</button>
+                        <button class="w-24 bg-gray-200 text-black py-1 px-3 rounded-3xl">Delete</button>
+                    </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="confirm-friend bg-white rounded-2xl mb-3">
+              <div class="p-5">
+                <div class="mb-5">
+                  <h4 class="inline-block text-xs font-bold">Confirm Friend</h4>
+                  <a href="#" class="float-right text-xs text-blue-500 font-bold">See all</a>
+                </div>
+                
+                <div class="flex justify-between bg-gray-100 py-5 px-3 rounded-md mb-4">
+                  <div class="flex ">
+                    <img src="./image/avartar_4.jfif" alt="avatar" class="w-9 h-9
+                      rounded-3xl inline-block" />
+                    <h4 class="ml-2 flex flex-col w-32 text-sm font-medium">
+                      Hòa Thạch
+                      <span class="text-gray-400 text-xs font-semibold">12 mutual friends</span>
+                    </h4>
+                  </div>
+                  <a href=""><i class="fas fa-angle-right w-9 h-9 text-center leading-9 bg-white rounded-3xl"></i> </a>
+                </div>
+                <div class="flex justify-between bg-gray-100 py-5 px-3 rounded-md mb-4">
+                  <div class="flex ">
+                    <img src="./image/avartar_2.jpg" alt="avatar" class="w-9 h-9
+                      rounded-3xl inline-block" />
+                    <h4 class="ml-2 flex flex-col w-32 text-sm font-medium">
+                      Nhật Hoàng
+                      <span class="text-gray-400 text-xs font-semibold">30 mutual friends</span>
+                    </h4>
+                  </div>
+                  <a href=""><i class="fas fa-angle-right w-9 h-9 text-center leading-9 bg-white rounded-3xl"></i> </a>
+                </div>
+                <div class="flex justify-between bg-gray-100 py-5 px-3 rounded-md">
+                  <div class="flex ">
+                    <img src="./image/avartar_1.jpg" alt="avatar" class="w-9 h-9
+                      rounded-3xl inline-block" />
+                    <h4 class="ml-2 flex flex-col w-32 text-sm font-medium">
+                      Ngọc Viễn
+                      <span class="text-gray-400 text-xs font-semibold">20 mutual friends</span>
+                    </h4>
+                  </div>
+                  <a href=""><i class="fas fa-angle-right w-9 h-9 text-center leading-9 bg-white rounded-3xl"></i> </a>
+                </div>
+
+              </div>
+            </div>
+            
+            <div class="suggest-pages bg-white rounded-2xl mb-3">
+              <div class="p-5">
+                <div class="mb-5">
+                  <h4 class="inline-block text-xs font-bold">Suggest Pages</h4>
+                  <a href="#" class=" float-right text-xs text-blue-500 font-bold">See all</a>
+                </div>
+
+                <div class="mb-5">
+                  <img src="/image/suggest-pages_1.jpg" alt="" class="w-full rounded-xl mb-2">
+                  <button class="w-full bg-gray-100 text-black py-2 rounded-full">
+                    <i class="fas fa-arrow-right text-xs"></i>
+                    <span class="text-xs font-semibold">Like Page</span>
+                  </button>
+                </div>
+
+                <div>
+                  <img src="/image/suggest-pages_2.jpg" alt="" class="w-full rounded-xl mb-2">
+                  <button class="w-full bg-gray-100 text-black py-2 rounded-full">
+                    <i class="fas fa-arrow-right text-xs"></i>
+                    <span class="text-xs font-semibold">Like Page</span>
+                  </button>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="events bg-white rounded-2xl mb-3">
+              <div class="p-5">
+                <div class="mb-5">
+                  <h4 class="inline-block text-xs font-bold">Event</h4>
+                  <a href="#" class="float-right text-xs text-blue-500 font-bold">See all</a>
+                </div>
+
+                <div class="flex items-center mb-4">
+                  <div class="bg-yellow-500 py-3 px-3.5 rounded-xl text-center mr-2">
+                    <p class="text-white font-bold text-sm">APR</p>
+                    <p class="text-white font-bold text-2xl -m-1.5">13</p>
+                  </div>
+                  <div>
+                    <p class=" text-xs font-bold">Meeting with clients</p>
+                    <p class="text-xs text-gray-400">41 madison ave, floor 24 new work, NY 10010</p>
+                  </div>
+                </div>
+                <div class="flex items-center mb-4">
+                  <div class="bg-green-400 py-3 px-3.5 rounded-xl text-center mr-2">
+                    <p class="text-white font-bold text-sm">APR</p>
+                    <p class="text-white font-bold text-2xl -m-1.5">22</p>
+                  </div>
+                  <div>
+                    <p class=" text-xs font-bold">Meeting with clients</p>
+                    <p class="text-xs text-gray-400">41 madison ave, floor 24 new work, NY 10010</p>
+                  </div>
+                </div>
+                <div class="flex items-center mb-4">
+                  <div class="bg-green-400 py-3 px-3.5 rounded-xl text-center mr-2">
+                    <p class="text-white font-bold text-sm">APR</p>
+                    <p class="text-white font-bold text-2xl -m-1.5">30</p>
+                  </div>
+                  <div>
+                    <p class=" text-xs font-bold">Meeting with clients</p>
+                    <p class="text-xs text-gray-400">41 madison ave, floor 24 new work, NY 10010</p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            
+            <div class="photos bg-white rounded-2xl">
+              <div class="p-5">
+                <div class="mb-5">
+                  <h4 class="inline-block text-xs font-bold">Photos</h4>
+                  <a href="#" class="float-right text-xs text-blue-500 font-bold">See all</a>
+                </div>
+
+                <div class="flex flex-wrap w-full mb-3">
+                    <img src="/image/photo_1.jpg" alt="" class="rounded-xl w-1/2 p-1 ">
+                    <img src="/image/photo_2.jpg" alt="" class="rounded-xl w-1/2 p-1 ">
+                    <img src="/image/photo_3.jpg" alt="" class="rounded-xl w-1/2 p-1 ">
+                    <img src="/image/photo_4.jpg" alt="" class="rounded-xl w-1/2 p-1 ">
+                    <img src="/image/photo_5.jpg" alt="" class="rounded-xl w-1/2 p-1 ">
+                    <img src="/image/photo_6.jpg" alt="" class="rounded-xl w-1/2 p-1 ">
+                </div>
+                <button class=" w-full bg-gray-100 text-black  py-2  rounded-3xl mr-3">
+                  <i class="fas fa-arrow-right text-xs"></i>
+                  <span class="text-xs font-semibold">More</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="aside hidden xl:w-1/5 xl:block">
+        <div class="w-4/5 flex-col ml-auto">
+          <div class="aside-content bg-white ml-3 px-5 pt-3 rounded-t-xl">
+            <div class="py-1">
+              <p class="text-xs text-gray-300 font-bold pl-1">CONTACTS</p>
+            </div>
+            <ul>
+              <li class="py-2 flex justify-between">
+                <a href="">
+                  <img src="./image/avartar_1.jpg" alt="avatar" class="w-9 h-9
+                    rounded-3xl inline-block" />
+                  <span class="text-gray-600 text-xs font-bold leading-8 ml-2">Phú
+                    Ân</span>
+                </a>
+                <span><i
+                    class="fas fa-circle leading-8 text-yellow-500"
+                    style="font-size: 8px"></i></span>
+              </li>
+              <li class="py-2 flex justify-between">
+                <a href="">
+                  <img src="./image/avartar_2.jpg" alt="avatar" class="w-9 h-9
+                    rounded-3xl inline-block" />
+                  <span class="text-gray-600 text-xs font-bold leading-8 ml-2">Đăng
+                    Định</span>
+                </a>
+                <span><i
+                    class="fas fa-circle leading-8 text-red-500"
+                    style="font-size: 8px"></i></span>
+              </li>
+              <li class="py-2 flex justify-between">
+                <a href="">
+                  <img src="./image/avartar_3.jfif" alt="avatar" class="w-9 h-9
+                    rounded-3xl inline-block" />
+                  <span class="text-gray-600 text-xs font-bold leading-8 ml-2">Thanh
+                    Tuấn</span>
+                </a>
+                <span><i
+                    class="fas fa-circle leading-8 text-green-500"
+                    style="font-size: 8px"></i></span>
+              </li>
+              <li class="py-2 flex justify-between">
+                <a href="">
+                  <img src="./image/avartar_4.jfif" alt="avatar" class="w-9 h-9
+                    rounded-3xl inline-block" />
+                  <span class="text-gray-600 text-xs font-bold leading-8 ml-2">Ngọc
+                    Huy</span>
+                </a>
+                <span><i
+                    class="fas fa-circle leading-8 text-yellow-500"
+                    style="font-size: 8px"></i></span>
+              </li>
+              <li class="py-2 flex justify-between">
+                <a href="">
+                  <img src="./image/avartar_5.jfif" alt="avatar" class="w-9 h-9
+                    rounded-3xl inline-block" />
+                  <span class="text-gray-600 text-xs font-bold leading-8 ml-2">Minh
+                    Phương</span>
+                </a>
+                <span><i
+                    class="fas fa-circle leading-8 text-yellow-500"
+                    style="font-size: 8px"></i></span>
+              </li>
+              <li class="py-2 flex justify-between">
+                <a href="">
+                  <img src="./image/avartar_6.jfif" alt="avatar" class="w-9 h-9
+                    rounded-3xl inline-block" />
+                  <span class="text-gray-600 text-xs font-bold leading-8 ml-2">Thắng</span>
+                </a>
+                <span><i
+                    class="fas fa-circle leading-8 text-green-500"
+                    style="font-size: 8px"></i></span>
+              </li>
+              <li class="py-2 flex justify-between">
+                <a href="">
+                  <img src="./image/avartar_2.jpg" alt="avatar" class="w-9 h-9
+                    rounded-3xl inline-block" />
+                  <span class="text-gray-600 text-xs font-bold leading-8 ml-2">Văn
+                    Nghĩa</span>
+                </a>
+                <span><i
+                    class="fas fa-circle leading-8 text-red-500"
+                    style="font-size: 8px"></i></span>
+              </li>
+              <li class="py-2 flex justify-between">
+                <a href="">
+                  <img src="./image/a.jpg" alt="avatar" class="w-9 h-9
+                    rounded-3xl inline-block" />
+                  <span class="text-gray-600 text-xs font-bold leading-8 ml-2">Tấn
+                    Hiệu</span>
+                </a>
+                <span><i
+                    class="fas fa-circle leading-8 text-green-500"
+                    style="font-size: 8px"></i></span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="aside-content bg-white ml-3 px-5">
+            <div class="py-1">
+              <p class="text-xs text-gray-300 font-bold pl-1">GROUPS</p>
+            </div>
+            <ul>
+              <li class="py-2 flex justify-between">
+                <a href="" class="">
+                  <span class="inline-block
+                    text-center
+                    leading-9
+                    w-9
+                    h-9
+                    font-bold
+                    text-white
+                    rounded-3xl
+                    bg-gradient-to-r
+                    from-yellow-400
+                    via-red-500
+                    to-pink-500">TD</span>
+                  <span class="text-gray-600 text-xs font-bold leading-8 ml-2">TOIDEV</span>
+                </a>
+                <span><i
+                    class="fas fa-circle leading-8 text-green-500"
+                    style="font-size: 8px"></i></span>
+              </li>
+
+              <li class="py-2 flex justify-between">
+                <a href="" class="">
+                  <span class="inline-block
+                    text-center
+                    leading-9
+                    w-9
+                    h-9
+                    font-bold
+                    text-white
+                    rounded-3xl
+                    bg-gradient-to-r
+                    from-yellow-400
+                    via-yellow-500
+                    to-pink-500">BD</span>
+                  <span class="text-gray-600 text-xs font-bold leading-8 ml-2">BANDEV</span>
+                </a>
+                <span><i
+                    class="fas fa-circle leading-8 text-green-500"
+                    style="font-size: 8px"></i></span>
+              </li>
+
+              <li class="py-2 flex justify-between">
+                <a href="" class="">
+                  <span class="inline-block
+                    text-center
+                    leading-9
+                    w-9
+                    h-9
+                    font-bold
+                    text-white
+                    rounded-3xl
+                    bg-gradient-to-r
+                    from-yellow-400
+                    via-green-500
+                    to-pink-500">XL</span>
+                  <span class="text-gray-600 text-xs font-bold leading-8 ml-2">NodeJs</span>
+                </a>
+                <span><i
+                    class="fas fa-circle leading-8 text-red-500"
+                    style="font-size: 8px"></i></span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="aside-content bg-white ml-3 px-5 pb-3 rounded-b-xl">
+            <div class="py-1">
+              <p class="text-xs text-gray-300 font-bold pl-1">PAGES</p>
+            </div>
+            <ul>
+              <li class="py-2 flex justify-between">
+                <a href="">
+                  <span class="inline-block
+                    text-center
+                    leading-9
+                    font-bold
+                    text-white
+                    w-9
+                    h-9
+                    rounded-3xl
+                    bg-gradient-to-r
+                    from-yellow-400
+                    via-red-500
+                    to-pink-500">VB</span>
+                  <span class="text-gray-600 text-xs font-bold leading-8 ml-2">VBSG</span>
+                </a>
+                <span><i
+                    class="fas fa-circle leading-8 text-yellow-500"
+                    style="font-size: 8px"></i></span>
+              </li>
+
+              <li class="py-2 flex justify-between">
+                <a href="">
+                  <span class="inline-block
+                    text-center
+                    leading-9
+                    font-bold
+                    text-white
+                    w-9
+                    h-9
+                    rounded-3xl
+                    bg-gradient-to-r
+                    from-yellow-400
+                    via-yellow-500
+                    to-pink-500">NJ</span>
+                  <span class="text-gray-600 text-xs font-bold leading-8 ml-2">NodeJs</span>
+                </a>
+                <span><i
+                    class="fas fa-circle leading-8 text-yellow-500"
+                    style="font-size: 8px"></i></span>
+              </li>
+
+              <li class="py-2 flex justify-between">
+                <a href="">
+                  <span class="inline-block
+                    text-center
+                    leading-9
+                    font-bold
+                    text-white
+                    w-9
+                    h-9
+                    rounded-3xl
+                    bg-gradient-to-r
+                    from-yellow-400
+                    via-green-500
+                    to-pink-500">JS</span>
+                  <span class="text-gray-600 text-xs font-bold leading-8 ml-2">Javscript</span>
+                </a>
+                <span><i
+                    class="fas fa-circle leading-8 text-red-500"
+                    style="font-size: 8px"></i></span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+</html>

@@ -1,0 +1,37 @@
+/* ------- HEADER ---------*/
+.search i {
+  top: 50%;
+  transform: translateY(-50%);
+  left: 4%;
+}
+
+/*-------- MAIN --------*/
+
+/*----------CONTENT_STORY ----------*/
+.story__item__image {
+  background-image: url("./image/story2.jpg");
+  background-size: cover;
+  background-position: center;
+  /* width: 125px;
+  height: 200px; */
+  border-radius: 12px;
+}
+
+.story__item__image > div {
+  top: 60%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/*----------CONTENT_CREATE-POST ----------*/
+.create-post img {
+  top: 8px;
+  left: 8px;
+}
+
+/*----------CONTENT_NEW-POST ----------*/
+
+img {
+  object-fit: cover;
+}
+
